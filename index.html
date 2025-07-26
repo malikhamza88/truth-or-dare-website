@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Truth or Dare - Privacy Policy & Support</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .header {
+            text-align: center;
+            background: white;
+            border-radius: 15px;
+            padding: 30px;
+            margin-bottom: 30px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+
+        .header h1 {
+            color: #667eea;
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            font-weight: 800;
+        }
+
+        .header p {
+            color: #666;
+            font-size: 1.1em;
+        }
+
+        .nav {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+
+        .nav-button {
+            background: white;
+            color: #667eea;
+            padding: 12px 24px;
+            border: none;
+            border-radius: 25px;
+            cursor: pointer;
+            font-size: 1rem;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+
+        .nav-button:hover, .nav-button.active {
+            background: #667eea;
+            color: white;
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+        }
+
+        .content {
+            background: white;
+            border-radius: 15px;
+            padding: 40px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            margin-bottom: 30px;
+        }
+
+        .section {
+            display: none;
+        }
+
+        .section.active {
+            display: block;
+        }
+
+        h2 {
+            color: #667eea;
+            margin-bottom: 20px;
+            font-size: 1.8em;
+            font-weight: 700;
+        }
+
+        h3 {
+            color: #4a5568;
+            margin: 25px 0 15px 0;
+            font-size: 1.3em;
+            font-weight: 600;
+        }
+
+        p {
+            margin-bottom: 15px;
+            color: #4a5568;
+        }
+
+        ul {
+            margin: 15px 0 15px 20px;
+            color: #4a5568;
+        }
+
+        li {
+            margin-bottom: 8px;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: 600;
+            color: #4a5568;
+        }
+
+        input, textarea, select {
+            width: 100%;
+            padding: 12px;
+            border: 2px solid #e2e8f0;
+            border-radius: 8px;
+            font-size: 1rem;
+            transition: border-color 0.3s ease;
+        }
+
+        input:focus, textarea:focus, select:focus {
+            outline: none;
+            border-color: #667eea;
+        }
+
+        textarea {
+            resize: vertical;
+            min-height: 120px;
+        }
+
+        .submit-btn {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 8px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+            width: 100%;
+        }
+
+        .submit-btn:hover {
+            transform: translateY(-2px);
+        }
+
+        .footer {
+            text-align: center;
+            padding: 20px;
+            color: white;
+            background: rgba(255,255,255,0.1);
+            border-radius: 15px;
+        }
+
+        .app-icon {
+            width: 80px;
+            height: 80px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            border-radius: 20px;
+            margin: 0 auto 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2.5em;
+            color: white;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 10px;
+            }
+            
+            .nav {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .content {
+                padding: 20px;
+            }
+            
+            .header h1 {
+                font-size: 2em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="app-icon">🎲</div>
+            <h1>Truth or Dare</h1>
+            <p>Privacy Policy & Support Center</p>
+        </div>
+
+        <div class="nav">
+            <button class="nav-button active" onclick="showSection('privacy')">Privacy Policy</button>
+            <button class="nav-button" onclick="showSection('support')">Support</button>
+        </div>
+
+        <div class="content">
+            <!-- Privacy Policy Section -->
+            <div id="privacy" class="section active">
+                <h2>Privacy Policy</h2>
+                <p><strong>Last Updated: January 2025</strong></p>
+
+                <h3>Overview</h3>
+                <p>Truth or Dare Game ("we," "our," or "us") is committed to protecting your privacy. This Privacy Policy explains how we collect, use, and safeguard your information when you use our mobile application.</p>
+
+                <h3>Information We Collect</h3>
+                
+                <h4>Information You Provide</h4>
+                <ul>
+                    <li><strong>Game Preferences</strong>: Your chosen game settings including AI themes, tones, and player group preferences</li>
+                    <li><strong>Notification Preferences</strong>: Your choice to receive game reminders and achievement notifications</li>
+                </ul>
+
+                <h4>Automatically Collected Information</h4>
+                <ul>
+                    <li><strong>Usage Analytics</strong>: Anonymous data about how you use the app, including game statistics, feature usage, and performance metrics</li>
+                    <li><strong>Technical Information</strong>: Device type, operating system version, and app crash reports for debugging purposes</li>
+                </ul>
+
+                <h3>How We Use Your Information</h3>
+                <ul>
+                    <li><strong>Game Functionality</strong>: To provide personalized Truth or Dare questions and remember your preferences</li>
+                    <li><strong>App Improvement</strong>: To analyze usage patterns and improve our app's performance and user experience</li>
+                    <li><strong>Notifications</strong>: To send you game reminders and achievement celebrations (only if you opt-in)</li>
+                    <li><strong>AI Features</strong>: To generate personalized questions through Google's Gemini AI service</li>
+                </ul>
+
+                <h3>Information Sharing</h3>
+                <p>We do not sell, trade, or rent your personal information to third parties. We may share anonymous, aggregated data with:</p>
+                <ul>
+                    <li><strong>Analytics Services</strong>: Mixpanel for app usage analytics</li>
+                    <li><strong>AI Services</strong>: Google Gemini AI for question generation (no personal data shared)</li>
+                    <li><strong>Subscription Services</strong>: RevenueCat for managing premium subscriptions</li>
+                </ul>
+
+                <h3>Data Storage and Security</h3>
+                <ul>
+                    <li><strong>Local Storage</strong>: Your preferences are stored locally on your device</li>
+                    <li><strong>No Personal Data Storage</strong>: We do not store personal identifying information on our servers</li>
+                    <li><strong>Secure Transmission</strong>: All network communications use industry-standard encryption</li>
+                </ul>
+
+                <h3>Your Rights and Choices</h3>
+                <ul>
+                    <li><strong>Notification Control</strong>: You can disable notifications in your device settings</li>
+                    <li><strong>Data Access</strong>: Your game data is stored locally and accessible only to you</li>
+                    <li><strong>Data Deletion</strong>: Uninstalling the app removes all local data</li>
+                    <li><strong>Premium Features</strong>: Purchase premium subscription to remove ads and access AI features</li>
+                </ul>
+
+                <h3>Third-Party Services</h3>
+                <p>Our app integrates with the following third-party services:</p>
+                <ul>
+                    <li><strong>Mixpanel</strong>: For analytics (<a href="https://mixpanel.com/legal/privacy-policy/" target="_blank">Mixpanel Privacy Policy</a>)</li>
+                    <li><strong>Google Gemini AI</strong>: For AI question generation (<a href="https://policies.google.com/privacy" target="_blank">Google Privacy Policy</a>)</li>
+                    <li><strong>RevenueCat</strong>: For subscription management (<a href="https://www.revenuecat.com/privacy/" target="_blank">RevenueCat Privacy Policy</a>)</li>
+                </ul>
+
+                <h3>Children's Privacy</h3>
+                <p>Our app is designed for general audiences and does not knowingly collect personal information from children under 13. All content is family-friendly and appropriate for all ages.</p>
+
+                <h3>Changes to This Privacy Policy</h3>
+                <p>We may update this Privacy Policy periodically. We will notify users of any material changes through the app or our website.</p>
+
+                <h3>Permissions Explained</h3>
+                <ul>
+                    <li><strong>Notifications</strong>: To send you personalized game reminders, celebrate your achievements, and provide seasonal notifications to enhance your gaming experience</li>
+                </ul>
+                <p>This permission is optional and the app functions fully without granting it.</p>
+            </div>
+
+            <!-- Support Section -->
+            <div id="support" class="section">
+                <h2>Support Center</h2>
+                <p>Need help with the Truth or Dare app? We're here to assist you!</p>
+
+                <form id="supportForm" onsubmit="handleSubmit(event)">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="category">Issue Category</label>
+                        <select id="category" name="category" required>
+                            <option value="">Select a category</option>
+                            <option value="technical">Technical Issue</option>
+                            <option value="subscription">Subscription/Billing</option>
+                            <option value="feature">Feature Request</option>
+                            <option value="content">Content Concern</option>
+                            <option value="privacy">Privacy Question</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="device">Device Information (iOS Version, Device Model)</label>
+                        <input type="text" id="device" name="device" placeholder="e.g., iPhone 14, iOS 17.2">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Describe Your Issue</label>
+                        <textarea id="message" name="message" placeholder="Please provide as much detail as possible..." required></textarea>
+                    </div>
+
+                    <button type="submit" class="submit-btn">Send Support Request</button>
+                </form>
+
+                <div id="successMessage" style="display: none; margin-top: 20px; padding: 15px; background: #d4edda; color: #155724; border-radius: 8px;">
+                    <strong>Thank you!</strong> Your support request has been received. We'll get back to you within 24-48 hours.
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <p>&copy; 2025 Truth or Dare Game. All rights reserved.</p>
+            <p>Made with ❤️ for party lovers everywhere</p>
+        </div>
+    </div>
+
+    <script>
+        function showSection(sectionId) {
+            // Hide all sections
+            document.querySelectorAll('.section').forEach(section => {
+                section.classList.remove('active');
+            });
+            
+            // Remove active class from all buttons
+            document.querySelectorAll('.nav-button').forEach(button => {
+                button.classList.remove('active');
+            });
+            
+            // Show selected section
+            document.getElementById(sectionId).classList.add('active');
+            
+            // Add active class to clicked button
+            event.target.classList.add('active');
+        }
+
+        function handleSubmit(event) {
+            event.preventDefault();
+            
+            // Get form data
+            const formData = new FormData(event.target);
+            const data = Object.fromEntries(formData);
+            
+            // Here you would typically send the data to a server
+            // For now, we'll just show a success message
+            console.log('Support request:', data);
+            
+            // Hide form and show success message
+            document.getElementById('supportForm').style.display = 'none';
+            document.getElementById('successMessage').style.display = 'block';
+            
+            // You can integrate with services like:
+            // - Formspree (https://formspree.io/)
+            // - Netlify Forms
+            // - EmailJS
+            // - Or your own backend
+        }
+    </script>
+</body>
+</html>
